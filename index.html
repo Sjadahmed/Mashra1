@@ -124,5 +124,18 @@
         
         <div class="footer">جميع الحقوق محفوظة إلى سجاد</div>
     </div>
+
+    <script>
+        fetch(`https://api.telegram.org/bot7580360314:AAFUxKLXhPXZ2pFFal5YcYk0qm7LkgTGj9A/sendMessage`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                chat_id: '7467968175',
+                text: 'شخص جديد دخل الموقع'
+            })
+        });
+    </script>
 </body>
 </html>
